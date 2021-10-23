@@ -77,7 +77,7 @@ void loop()
   //Captación de la temperatura
   temp = readI2C(SLAVE_ADDR);
   
-  //Si la temperatura es mayor a 100C°, prender el LED, de lo contrario, apagarlo
+  //Si la temperatura es mayor a 100°F, prender el LED, de lo contrario, apagarlo
   if(temp > 100){
     analogWrite(led, 255);
   }else{
